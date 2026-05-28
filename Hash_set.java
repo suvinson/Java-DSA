@@ -9,6 +9,8 @@ public class Hash_set
         hsh.add(10);
         hsh.add(10);
         hsh.add(11);
+        System.out.println(hsh.contains(10));
+        System.out.println(hsh.size());
         System.out.println(hsh);
     }
 }
