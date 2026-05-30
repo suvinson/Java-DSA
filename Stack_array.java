@@ -43,7 +43,7 @@ public class Stack_array {
         if(top>=0)
         {
             System.out.println("Stack elements are : ");
-            for(int i=0;i<=top;i++)
+            for(int i=top;i>=0;i--)
             {
                 System.out.print(stack[i] + " ");
             }
