@@ -27,7 +27,7 @@ class Solution
             k++;
         }
         while(j<=end)
-        {
+        {  
             arr3[k] = arr1[j];
             j++;
             k++;
