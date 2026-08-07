@@ -11,6 +11,11 @@ class Solution {
         while(low <= high)
         {
             mid = (low+high) / 2;
+            if(nums[low] <= nums[high])
+            {
+                mini = Math.min(mini,nums[low]);
+                break;
+            }
             if(nums[low] <= nums[mid])
             {
                 mini = Math.min(mini,nums[low]);
