@@ -1,0 +1,35 @@
+import java.util.*;
+class Solution {
+    public int romanToInt(String s) {
+        HashMap<Character, Integer> map = new HashMap<>();
+        map.put('I',1);
+        map.put('V',5);
+        map.put('X',10);
+        map.put('L',50);
+        map.put('C',100);
+        map.put('D',500);
+        map.put('M',1000);
+        int ans = 0;
+        for(int i=0;i<s.length();i++)
+        {
+            if(i + 1 < s.length() && map.get(s.charAt(i)) < map.get(s.charAt(i + 1)))
+            {
+                ans -= map.get(s.charAt(i));
+            }
+            else
+                ans += map.get(s.charAt(i));
+        }
+        return ans;
+    }
+}
+public class Roman_to_integer {
+    public static void main(String arg[])
+    {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter the string value {'I','V','X','L','C','D','M'} : ");
+        String s = scn.nextLine();
+        Solution sol = new Solution();
+        int ans = sol.romanToInt(s);
+        System.out.println("Roman to Intger conversion : " + ans);
+    }
+}
