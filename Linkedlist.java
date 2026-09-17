@@ -59,7 +59,7 @@ class Linkedlist
 
     public static void main(String args[])
     {
-        Linkedlist list=new Linkedlist();
+        Linkedlist list = new Linkedlist();
         System.out.println("Inserting at the begining");
         list.insertbegining(1);
         list.display();
