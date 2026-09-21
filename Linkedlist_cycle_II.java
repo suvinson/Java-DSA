@@ -8,7 +8,7 @@ class ListNode
           val = x;
           next = null;
       }
-  }
+}
 class Solution {
     public ListNode detectCycle(ListNode head) {
         /* Set<ListNode> ls = new HashSet<>();
