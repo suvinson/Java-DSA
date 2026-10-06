@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution
+/* class Solution
 {
     public int minAddToMakeValid(String s)
     {
@@ -22,7 +22,7 @@ class Solution
             }
         }
         return stk.size();
-         */
+         
         // optimised coding 
         int open = 0;
         int minadd = 0;
@@ -45,6 +45,27 @@ class Solution
             }
         }
         return open + minadd;
+    }
+} */
+class Solution {
+    public int minAddToMakeValid(String s) {
+        Stack<Character> stk = new Stack<>();
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i) == '(')
+            {
+                stk.push('(');
+            }
+            if(stk.isEmpty() && s.charAt(i) == ')' || stk.peek() == ')' && s.charAt(i) == ')')
+            {
+                stk.push(')');
+            }
+            if(s.charAt(i) == ')' && stk.peek() == '(')
+            {
+                stk.pop();
+            }
+        }
+        return stk.size();
     }
 }
 class Min_add_parentheses
