@@ -13,7 +13,7 @@ class Solution
 {
     public ListNode addOne(ListNode head)
     {
-        //Brute force 
+        // Brute force 
         // Reverse it and add one and reverse it again
        /*  ListNode prev = null;
         ListNode current = head;
