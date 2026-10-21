@@ -19,7 +19,7 @@ public class Rotate_string {
     public static void main(String arg[])
     {
         Scanner scn = new Scanner(System.in);
-         System.out.println("Enter the first string : ");
+        System.out.println("Enter the first string : ");
         String s = scn.nextLine();
         System.out.println("Enter the second string : ");
         String t = scn.nextLine();
